@@ -11,11 +11,13 @@ document.addEventListener('input', function(event) {
             // Find the email input field
             let emailInput = document.querySelector('input[name="email"]');
             let lastName = document.querySelector('input[name="l_name"]');
+            let firstName = document.querySelector('input[name="f_name"]');
             let city = document.querySelector('input[name="city"]');
             
             // If email field exists, set the auto-generated email
             if (emailInput) {
                 emailInput.value = `customers+${phoneNumber}@pos.nest.com.bd`;
+                firstName.value = `0${phoneNumber}`;
                 lastName.value = `0${phoneNumber}`;
                 city.value = `Dhaka`;
             }
