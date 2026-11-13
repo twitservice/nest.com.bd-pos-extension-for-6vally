@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Nest POS Auto Field by asifulmamun.info.bd",
+  "version": "1.0",
+  "description": "Auto fills email address when an 10-digit phone number is entered.",
+  "content_scripts": [
+    {
+      "matches": ["*://nest.com.bd/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
